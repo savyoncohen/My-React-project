@@ -24,34 +24,13 @@ const template = (
         <ol>
             <li>First item</li>
             <li>Second item</li>
-        </ol>
+    </ol>
+    <form>
+      <input type="text" name="option"></input>
+      <button>Add option</button>
+    </form>
     </div>
 );
-
-let counter = 0;
-const addOne = () => {
-  counter++;
-  console.log('add one');
-};
-const minusOne = () => {
-  counter--;
-  console.log('minus one');
-};
-const reset = () => { 
-  console.log('Reset button');
-};
-const templateTwo = (
-    <div>
-    <h1>Count: {counter}</h1>
-    <button onClick={addOne}>+1</button>
-    <button onClick={minusOne}>-1</button>
-    <button onClick={reset}>Reset</button>
-    </div>
-);
-
-console.log(templateTwo);
 
 const appRoot = document.getElementById('app');
-
-
-ReactDOM.render(templateTwo, appRoot);
+ReactDOM.render(template, appRoot); 
