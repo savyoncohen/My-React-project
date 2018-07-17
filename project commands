@@ -1,12 +1,11 @@
+// Install packages
+sudo npm install or yarn install
+
 // Install live-server
 sudo npm install -g live-server
 
-// Run server locally
-live-server public
-
-// install packages
-sudo npm install or yarn install
-
-// Watch and compile js file into the public folder
+// Watch and compile JSX and ES6 into ES5 JS file in the public folder
 babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
 
+// Run server locally
+live-server public
