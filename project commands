@@ -9,3 +9,8 @@ babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
 
 // Run server locally
 live-server public
+
+
+// package json run babel commands
+ "build": "webpack --watch",
+ "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch"
